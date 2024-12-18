@@ -1,0 +1,29 @@
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.news__title {
+    width: 100%;
+    flex-shrink: 0;
+}
+.news_card {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.news__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(140, 40, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: auto;
+    margin-right: auto;
+   }  
