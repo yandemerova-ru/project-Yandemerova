@@ -1,20 +1,20 @@
 @font-face {
-    font-family: "Nunito";
-    src: url("../fonts/Nunito-Regular.ttf");
+    font-family: "Alegreya";
+    src: url("../fonts/Alegreya-Regular.ttf");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
     }
     @font-face {
-    font-family: "Nunito";
-    src: url("../fonts/Nunito-Bold.ttf");
+    font-family: "Alegreya";
+    src: url("../fonts/Alegreya-Bold.ttf");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
     }
     @font-face {
-    font-family: "Nunito";
-    src: url("../fonts/Nunito-Italic.ttf");
+    font-family: "Alegreya";
+    src: url("../fonts/Alegreya-Italic.ttf");
     font-weight: normal;
     font-style: italic;
     font-display: swap;

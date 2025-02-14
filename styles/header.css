@@ -1,25 +1,73 @@
 .menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-   }
-   .menu__link{
-    display: block;
-    padding: 10px;
-    margin: 5px;
-    background-color: rgb(140, 40, 255);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-   }  
-   .header_button{
-    display: block;
-    padding: 10px;
-    margin: 5px;
-    background-color: rgb(184, 126, 250);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    width: 15%;
-    flex-shrink: 0;
-   }
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#000000;
+ }
+ .menu__link {
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+ }
+ .header__login {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.header__logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  text-decoration: none;
+  color: rgb(97, 61, 255);
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+   padding-bottom: 20px;
+}
+  
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0;
+}
+ 
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+ 
+.menu a:hover {
+  background-color: #1a1a1a;
+}
+
+
+   
+   

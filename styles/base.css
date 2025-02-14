@@ -5,11 +5,11 @@ box-sizing: border-box;
 }
 html,
 body {
-font-family: 'Nunito', 'Arial', sans-serif;
+font-family: 'Alegreya';
 font-size: 18px;
 line-height: 30px;
-color: #030003;
-background-color: #f4e1ff;
+color: #ffffff;
+background-color: #1a1a1a;
 overflow-x: hidden;
 }
 img {
@@ -30,8 +30,8 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 .container{
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-   }
+width: 1440px;
+margin-left: auto;
+margin-right: auto;
+ }
    
