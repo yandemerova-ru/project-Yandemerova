@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,58 +6,101 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
+
     <header class="header container"> 
-        <a href="index.html" class="logo">K-Place</a>
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src=images/ alt="Логотип сайта" width="100">
+            <h1 class="header__title">K-Place</h1>
+        </a>    
+
+            <a class="header__login" href="entrance.html">Войти</a>
 
         <nav class="header__menu">
-            <ul class="menu">
+            <u1 class="menu">
                 <li class="menu__item menu__item--active">
                     <a class="menu__link" href="index.html">Главная</a>
                 </li>
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="biography.html">Биография</a>
-                </li>
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="music.html">Музыка</a>
-                </li>
-                <li class="menu__item menu__item--active">
+                <li class="menu__item">
                     <a class="menu__link" href="musicvideo.html">Клипы</a>
                 </li>
-            </ul>
+                <li class="menu__item">
+                    <a class="menu__link" href="music.html">Музыка</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="biography.html">Биография</a>
+                </li>
+            </u1>
         </nav>
 
-        <div class="header__login">
-            <a class="header__login" href="entrance.html">Войти</a>
-        </div>
-        
     </header>
     <main class="main container">
+
+
+        <section class="about">
+            <div class="about__wrap-left">
+                <h2 class="about__title">K-Place</h2>
+                <p></p>
+            </div>
+
+            <div class="about__wrap-right">
+                <img class="about__image" src="" alt="Фото">
+            </div>
+        </section>
+
         <div class="news">
-            <h2 class="news__title">Новости </h2>
+            <h3 class="news__title">Новости </h3>
             <div class="news_card">
-                <img class="news__image" src="images/minnie.jpg" alt="Фото" width="200">
-                <p class="news__subtitle">статья</p>
+                <img class="news__image" src="images/minnie1.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Минни из (G)I-DLE дебютировала с сольным мини-альбомом «Her»</p>
                 <p class="news__desc">краткое содержание</p>
-                <a class="news__link" href="#"> Читать дальше</a>
+                <button class="news__link" href="#"> Читать дальше</button>
             </div>
             <div class="news_card">
-                <img class="news__image" src="images/news2.jpg" alt="Фото" width="200">
-                <p class="news__subtitle">статья</p>
+                <img class="news__image" src="images/jisoo1.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Джису выпустила дебютный мини-альбом «Amortage»</p>
                 <p class="news__desc">краткое содержание</p>
-                <a class="news__link" href="#"> Читать дальше</a>
+                <button class="news__link" href="#"> Читать дальше</button>
             </div>
             <div class="news_card">
-                <img class="news__image" src="images/news3.jpg" alt="Фото" width="200">
-                <p class="news__subtitle">статья</p>
+                <img class="news__image" src="images/felix1.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Феликс сломал руку после автомобильной аварии</p>
                 <p class="news__desc">краткое содержание</p>
-                <a class="news__link" href="#"> Читать дальше</a>
+                <button class="news__link" href="#"> Читать дальше</button>
             </div>
         </div>
     </main>
-    <footer class="footer  container"> 
-        <p class="footer__desc">Яндемерова Раисия, группа - ЭК-21</p>
-    </footer>
 </body>
+
+    <footer class="container">
+    <div class="footer  container"> 
+        <div class="footer__content">
+            <h4>Контакты</h4>
+            <p>Электронная почта: kplace@gmail.com</p>
+            <p>Телефон: +79024329999</p>
+            <p>Яндемерова Раисия, ЭК-21</p>
+        </div>
+
+        <div class="footer__content">
+            <h4>Подпишитесь на нас</h4>
+            <ul class="social-icons ">
+                <li><a href=""><i class="fab fa-telegram"></i></a></li>
+                <li><a href=""><i class="fab fa-vk"></i></a></li>
+            </ul>
+        </div>
+        
+        <div class="footer__content">
+            <form class="form" action="">
+                <input type="text" placeholder="Введите запрос">
+                <button class="form__button" type="submit">Поиск</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2025</p>
+    </div>
+    </footer>
 </html>
