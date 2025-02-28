@@ -11,15 +11,9 @@
 <body>
 
     <header class="header container"> 
-        <a class="header__logo-wrap" href="index.html">
-            <img class="header__logo" src="images/logo.jpg" alt="Логотип сайта" width="100">
-            <h1 class="header__title">K-Place</h1>
-        </a>    
-
-            <a class="header__login" href="entrance.html">Войти</a>
-
+       
         <nav class="header__menu">
-            <u1 class="menu">
+            <ul class="menu">
                 <li class="menu__item menu__item--active">
                     <a class="menu__link" href="index.html">Главная</a>
                 </li>
@@ -32,11 +26,29 @@
                 <li class="menu__item">
                     <a class="menu__link" href="biography.html">Биография</a>
                 </li>
-            </u1>
+            </ul>
         </nav>
+
+        <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo" src="images/logo.jpg" alt="Логотип сайта">
+            <h1 class="header__title">K-Place</h1>
+        </a>    
+
+            <a class="header__login" href="entrance.html">Войти</a>
+
 
     </header>
     <main class="main container">
+
+        <section class="about">
+            <div class="about__wrap-left">
+                <h2 class="about__title">K-Place</h2>
+                <p>Добро пожаловать на сайт, посвященный муру K-pop! Здесь вы найдете все самое интересное об айдолах, группах и музыкальных новинках.</p>
+            </div>
+            <div class="about__wrap-right">
+                <img class="about__image" src="images/BTS.jpg" alt="Фото">
+            </div>
+        </section>
 
 
         <div class="news">
@@ -82,7 +94,7 @@
         
         <div class="footer__content">
             <form class="form" action="">
-                <input type="text" placeholder="Введите запрос">
+                <input class="form__text" type="text" placeholder="Введите запрос">
                 <button class="form__button" type="submit">Поиск</button>
             </form>
         </div>

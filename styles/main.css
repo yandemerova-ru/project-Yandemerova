@@ -18,8 +18,12 @@
     flex-direction: column;
     width: 400px;
     margin-bottom: 20px;
+    transition: transform 0.3s;
 }
 
+.news_card:hover{
+  transform: scale(1.03);
+}
 
 .news__link{
     display: block;
@@ -54,4 +58,20 @@
   .news button:hover {
     background-color: rgb(97, 61, 255);
   }
+
+  .about{
+    display: flex;
+    gap: 10px;
+   }
+   .about__wrap-right{
+    width: 500px;
+    flex-shrink: 0;
+   }
+   .about{
+    background-color: #1a1a1a;
+     color: rgb(255, 255, 255);
+     padding: 10px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+    }   
    

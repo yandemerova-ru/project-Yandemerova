@@ -68,7 +68,7 @@ a:hover{
 .bottom-bar{
     background: #8820ff;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin-top: 50px;
 }
 
@@ -85,9 +85,14 @@ a:hover{
     transition: background-color 0.3s;
     border: 2px solid rgb(97, 61, 255);
     border-radius: 5px;
+  
 
 }
 
   .form__button:hover {
     background-color: rgb(97, 61, 255);
+  }
+
+  .form__text {
+    color: black;
   }
