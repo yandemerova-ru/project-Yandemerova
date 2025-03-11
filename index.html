@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
+
 <body>
 
-    <header class="header container"> 
-       
+    <header class="header container">
+
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item menu__item--active">
@@ -32,51 +34,80 @@
         <a class="header__logo-wrap" href="index.html">
             <img class="header__logo" src="images/logo.jpg" alt="Логотип сайта">
             <h1 class="header__title">K-Place</h1>
-        </a>    
+        </a>
 
-            <a class="header__login" href="entrance.html">Войти</a>
+        <a class="header__login" href="entrance.html">Войти</a>
 
 
     </header>
     <main class="main container">
 
-        <section class="about">
-            <div class="about__wrap-left">
+        <div class="about">
+            <img class="about__image" src="images/BTS.jpg" alt="Фото">
+            <div class="about__inner">
                 <h2 class="about__title">K-Place</h2>
-                <p>Добро пожаловать на сайт, посвященный муру K-pop! Здесь вы найдете все самое интересное об айдолах, группах и музыкальных новинках.</p>
+                <p class="about__text">Добро пожаловать на сайт, посвященный муру K-pop! Здесь вы найдете все самое
+                    интересное об айдолах, группах и музыкальных новинках.</p>
             </div>
-            <div class="about__wrap-right">
-                <img class="about__image" src="images/BTS.jpg" alt="Фото">
-            </div>
-        </section>
+        </div>
+
 
 
         <div class="news">
             <h3 class="news__title">Новости </h3>
-            <div class="news_card">
-                <img class="news__image" src="images/minnie1.jpg" alt="Фото" width="200">
-                <p class="news__subtitle">Минни из (G)I-DLE дебютировала с сольным мини-альбомом «Her»</p>
-                <p class="news__desc">(G)I-DLE вокалистка Минни выпустила свой дебютный сольный сингл «Her» вместе с одноимённым мини-альбомом.</p>
-                <button class="news__link" href="#"> Читать дальше</button>
-            </div>
-            <div class="news_card">
-                <img class="news__image" src="images/jisoo1.jpg" alt="Фото" width="200">
-                <p class="news__subtitle">Джису выпустила дебютный мини-альбом «Amortage»</p>
-                <p class="news__desc">Джису из BLACKPINK выпустила свой сольный дебютный мини-альбом «Amortage» вместе с музыкальным видео на заглавную песню «Earthquake».</p>
-                <button class="news__link" href="#"> Читать дальше</button>
-            </div>
-            <div class="news_card">
-                <img class="news__image" src="images/felix1.jpg" alt="Фото" width="200">
-                <p class="news__subtitle">Феликс сломал руку после автомобильной аварии</p>
-                <p class="news__desc">Участник Stray Kids Феликс сломал руку после «незначительной» автомобильной аварии, о которой сообщил его лейбл JYP Entertainment</p>
-                <button class="news__link" href="#">Читать дальше</button>
-            </div>
+            <div class="news__wrap">
+                <button class="news__left">
+                    <img src="images/left.svg" alt="Влево" class="news__left-swiper" width="100">
+                </button>
+
+                <div class="news_card">
+                    <img class="news__image" src="images/minnie1.jpg" alt="Фото" width="200">
+                    <p class="news__subtitle">Минни из (G)I-DLE дебютировала с сольным мини-альбомом «Her»</p>
+                    <p class="news__desc">(G)I-DLE вокалистка Минни выпустила свой дебютный сольный сингл «Her» вместе с
+                        одноимённым мини-альбомом.</p>
+                    <button class="news__link" href="#"> Читать дальше</button>
+                </div>
+                <div class="news_card">
+                    <img class="news__image" src="images/jisoo1.jpg" alt="Фото" width="200">
+                    <p class="news__subtitle">Джису выпустила дебютный мини-альбом «Amortage»</p>
+                    <p class="news__desc">Джису из BLACKPINK выпустила свой сольный дебютный мини-альбом «Amortage»
+                        вместе с музыкальным видео на заглавную песню «Earthquake».</p>
+                    <button class="news__link" href="#"> Читать дальше</button>
+                </div>
+                <div class="news_card">
+                    <img class="news__image" src="images/felix1.jpg" alt="Фото" width="200">
+                    <p class="news__subtitle">Феликс сломал руку после автомобильной аварии</p>
+                    <p class="news__desc">Участник Stray Kids Феликс сломал руку после «незначительной» автомобильной
+                        аварии, о которой сообщил его лейбл JYP Entertainment</p>
+                    <button class="news__link" href="#">Читать дальше</button>
+                </div>
+                <div class="news_card" style="display: none;">
+                    <img class="news__image" src="images/jisoo1.jpg" alt="Фото" width="200">
+                    <p class="news__subtitle">Джису выпустила дебютный мини-альбом «Amortage»</p>
+                    <p class="news__desc">Джису из BLACKPINK выпустила свой сольный дебютный мини-альбом «Amortage»
+                        вместе с музыкальным видео на заглавную песню «Earthquake».</p>
+                    <button class="news__link" href="#"> Читать дальше</button>
+                </div>
+                <div class="news_card" style="display: none;">
+                    <img class="news__image" src="images/jisoo1.jpg" alt="Фото" width="200">
+                    <p class="news__subtitle">Джису выпустила дебютный мини-альбом «Amortage»</p>
+                    <p class="news__desc">Джису из BLACKPINK выпустила свой сольный дебютный мини-альбом «Amortage»
+                        вместе с музыкальным видео на заглавную песню «Earthquake».</p>
+                    <button class="news__link" href="#"> Читать дальше</button>
+                </div>
+            </div> 
+            <button class="news__right">
+            <img src="images/right.svg" alt="Вправо" class="news__right-swiper" width="100">
+        </button>
         </div>
+       
     </main>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
-    <footer class="container">
-    <div class="footer  container"> 
+<footer class="container">
+    <div class="footer  container">
         <div class="footer__content">
             <h4>Контакты</h4>
             <p>Электронная почта: kplace@gmail.com</p>
@@ -91,7 +122,7 @@
                 <li><a href=""><i class="fab fa-vk"></i></a></li>
             </ul>
         </div>
-        
+
         <div class="footer__content">
             <form class="form" action="">
                 <input class="form__text" type="text" placeholder="Введите запрос">
@@ -103,5 +134,6 @@
     <div class="bottom-bar">
         <p>&copy; 2025</p>
     </div>
-    </footer>
+</footer>
+
 </html>
