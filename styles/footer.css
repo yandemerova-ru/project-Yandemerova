@@ -1,14 +1,9 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'OpenSans_Condensed',Arial, sans-serif;
-  font-size: 16px;
-  color: white;
-}
 
-footer{
+
+.footer{
   background: black;
   padding-top: 50px;
+  display: flex;
 }
 
 
@@ -16,13 +11,13 @@ footer{
     width: 33.3%;
 }
 
-h4{
+.footer__title{
     font-size: 28px;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.footer__content p{
+.info{
     width: 190px;
     margin: auto;
     padding: 7px;
@@ -30,9 +25,6 @@ h4{
 
 .footer__content ul{
     text-align: center;
-}
-.footer {
-    display: flex;
 }
 
 
@@ -53,11 +45,11 @@ h4{
     font-size: 25px;
 }
 
-a{
+.social-media{
     text-decoration: none;
 }
 
-a:hover{
+.social-media:hover{
     color: #8820ff;
 }
 
@@ -69,7 +61,7 @@ a:hover{
     background: #8820ff;
     text-align: center;
     padding: 5px;
-    margin-top: 50px;
+    
 }
 
 .bottom-bar p{
@@ -95,4 +87,8 @@ a:hover{
 
   .form__text {
     color: black;
+  }
+
+  .form__button {
+    color: white;
   }

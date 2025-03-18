@@ -12,7 +12,7 @@ display: flex;
     width: 100%;
     flex-shrink: 0;
 }
-.news_card {
+.news__card {
     padding: 10px;
     margin: 5px;
     background-color: rgb(58, 58, 58);
@@ -25,7 +25,7 @@ display: flex;
     transition: transform 0.3s;
 }
 
-.news_card:hover{
+.news__card:hover{
   transform: scale(1.03);
 }
 
@@ -49,7 +49,7 @@ display: flex;
     font-weight: 1000;
   }
 
-   .news button {
+   .news__link{
     display: block;
     color: white;
     padding: 14px 20px;
@@ -59,7 +59,7 @@ display: flex;
     border-radius: 5px;
   }
    
-  .news button:hover {
+  .news__link:hover {
     background-color: rgb(97, 61, 255);
   }
 
@@ -88,10 +88,20 @@ display: flex;
     justify-content: center;
   }
 
-  h3 {
+  .news__title {
     font-size: 30px;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 30px;
+  }
+
+  .news__left {
+    background-color: transparent;
+    border: none;
+  }
+
+  .news__right {
+    background-color: transparent;
+    border: none;
   }
 
