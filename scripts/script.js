@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // * 6. Конец.
    
     const news__link =document.querySelector(".news__link");
-    news__link.addEventListener('clik', () => {
+    news__link.addEventListener('click', () => {
         console.log ("Нажали на кнопку Читать дальше");
     })
+
 
 });
