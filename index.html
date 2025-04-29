@@ -11,29 +11,36 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+
+    <div class="content">
 
     <header class="header container">
 
         <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="index.html">Главная</a>
+            <ul class="header__list">
+                 <!-- <li class="header__item header__item--active">
+                    <a class="header__link" href="index.html">Главная</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="musicvideo.html">Клипы</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="music.html">Музыка</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="biography.html">Биография</a>
-                </li>
+                <li class="header__item">
+                    <a class="header__link" href="biography.html">Биография</a>
+                </li> 
+                <li class="header__item">
+                    <a class="header__link" href="shop.html">Магазин</a>
+                </li>-->
             </ul>
         </nav>
 
         <a class="header__logo-wrap" href="index.html">
             <img class="header__logo" src="images/logo.jpg" alt="Логотип сайта">
-            <h1 class="header__title">K-Place</h1>
+            <h1 class="header__title">Magic Shop</h1>
         </a>
 
         <a class="header__login" href="entrance.html">Войти</a>
@@ -51,8 +58,6 @@
             </div>
         </div>
 
-
-
         <div class="news">
             <h3 class="news__title">Новости </h3>
             <div class="news__wrap">
@@ -62,49 +67,49 @@
 
                 <div class="news__card">
                     <img class="news__image" src="images/minnie1.jpg" alt="Фото" width="200">
-                    <p class="news__subtitle">Минни из (G)I-DLE дебютировала с сольным мини-альбомом «Her»</p>
+                    <p class="news__subtitle">Новость 1</p>
                     <p class="news__desc">(G)I-DLE вокалистка Минни выпустила свой дебютный сольный сингл «Her» вместе с
                         одноимённым мини-альбомом.</p>
                     <button class="news__link" data-id="1"> Читать дальше</button>
                 </div>
                 <div class="news__card">
                     <img class="news__image" src="images/jisoo1.jpg" alt="Фото" width="200">
-                    <p class="news__subtitle">Джису выпустила дебютный мини-альбом «Amortage»</p>
+                    <p class="news__subtitle">Новость 2</p>
                     <p class="news__desc">Джису из BLACKPINK выпустила свой сольный дебютный мини-альбом «Amortage»
                         вместе с музыкальным видео на заглавную песню «Earthquake».</p>
                     <button class="news__link"  data-id="2"> Читать дальше</button>
                 </div>
                 <div class="news__card">
                     <img class="news__image" src="images/felix1.jpg" alt="Фото" width="200">
-                    <p class="news__subtitle">Феликс сломал руку после автомобильной аварии</p>
+                    <p class="news__subtitle">Новость 3</p>
                     <p class="news__desc">Участник Stray Kids Феликс сломал руку после «незначительной» автомобильной
                         аварии, о которой сообщил его лейбл JYP Entertainment</p>
                     <button class="news__link" data-id="3">Читать дальше</button>
                 </div>
                 <div class="news__card">
                     <img class="news__image" src="images/Cosmosy" alt="Фото" width="200">
-                    <p class="news__subtitle">Новость</p>
+                    <p class="news__subtitle">Новость 4</p>
                     <p class="news__desc">Джису из BLACKPINK выпустила свой сольный дебютный мини-альбом «Amortage»
                         вместе с музыкальным видео на заглавную песню «Earthquake».</p>
                     <button class="news__link" data-id="4"> Читать дальше</button>
                 </div>
                 <div class="news__card">
                     <img class="news__image" src="images/echo.png" alt="Фото" width="200">
-                    <p class="news__subtitle">ECHO - новый альбом Джина из BTS</p>
+                    <p class="news__subtitle">Новость 5</p>
                     <p class="news__desc">Джису из BLACKPINK выпустила свой сольный дебютный мини-альбом «Amortage»
                         вместе с музыкальным видео на заглавную песню «Earthquake».</p>
                     <button class="news__link" data-id="5"> Читать дальше</button>
                 </div>
                 <div class="news__card">
                     <img class="news__image" src="images/jennie.png" alt="Фото" width="200">
-                    <p class="news__subtitle">Новость</p>
+                    <p class="news__subtitle">Новость 6</p>
                     <p class="news__desc">(G)I-DLE вокалистка Минни выпустила свой дебютный сольный сингл «Her» вместе с
                         одноимённым мини-альбомом.</p>
                     <button class="news__link" data-id="6"> Читать дальше</button>
                 </div>
                 <div class="news__card">
                     <img class="news__image" src="images/jin.png" alt="Фото" width="200">
-                    <p class="news__subtitle">Новость</p>
+                    <p class="news__subtitle">Новость 7</p>
                     <p class="news__desc">(G)I-DLE вокалистка Минни выпустила свой дебютный сольный сингл «Her» вместе с
                         одноимённым мини-альбомом.</p>
                     <button class="news__link" data-id="7"> Читать дальше</button>
@@ -178,7 +183,7 @@
         <div class="footer ">
             <div class="footer__content">
                 <h4 class="footer__title">Контакты</h4>
-                <p class="info">Электронная почта: kplace@gmail.com</p>
+                <p class="info">Электронная почта: magicshop@gmail.com</p>
                 <p class="info">Телефон: +79024329999</p>
             </div>
     
@@ -206,9 +211,11 @@
             <p>&copy; 2025</p>
         </div>
     </footer>
-
+</div>
 
     <script src="./scripts/script.js"></script>
+    
+
 </body>
 
 </html>

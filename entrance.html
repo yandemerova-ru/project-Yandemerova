@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,44 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
-<body>
 
-    <header class="header container"> 
-       
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+
+    <div class="content">
+
+    <header class="header container">
+
         <nav class="header__menu">
-            <ul class="menu">
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="index.html">Главная</a>
+            <ul class="header__list">
+                 <!-- <li class="header__item header__item--active">
+                    <a class="header__link" href="index.html">Главная</a>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="musicvideo.html">Клипы</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="music.html">Музыка</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="biography.html">Биография</a>
-                </li>
+                <li class="header__item">
+                    <a class="header__link" href="biography.html">Биография</a>
+                </li> 
+                <li class="header__item">
+                    <a class="header__link" href="shop.html">Магазин</a>
+                </li>-->
             </ul>
         </nav>
 
         <a class="header__logo-wrap" href="index.html">
             <img class="header__logo" src="images/logo.jpg" alt="Логотип сайта">
-            <h1 class="header__title">K-Place</h1>
-        </a>    
+            <h1 class="header__title">Magic Shop</h1>
+        </a>
 
-            <a class="header__login" href="entrance.html">Войти</a>
-
+        <a class="header__login" href="entrance.html">Войти</a>
 
     </header>
+    <main class="entrance container">
     <div class="entrance__container">
         <div class="slider__entance"></div>
         <div class="btn">
@@ -62,29 +71,30 @@
             </div>
         </div>
     </div>
-
-</body>
-
+</main>
 <footer class="container">
-    <div class="footer  container"> 
+    <div class="footer ">
         <div class="footer__content">
-            <h4>Контакты</h4>
-            <p>Электронная почта: kplace@gmail.com</p>
-            <p>Телефон: +79024329999</p>
-            <p>Яндемерова Раисия, ЭК-21</p>
+            <h4 class="footer__title">Контакты</h4>
+            <p class="info">Электронная почта: magicshop@gmail.com</p>
+            <p class="info">Телефон: +79024329999</p>
         </div>
 
         <div class="footer__content">
-            <h4>Подпишитесь на нас</h4>
+            <h4 class="footer__title">Подпишитесь на нас</h4>
             <ul class="social-icons ">
-                <li><a href=""><i class="fab fa-telegram"></i></a></li>
-                <li><a href=""><i class="fab fa-vk"></i></a></li>
+                <li class="social">
+                    <a class="social__media" href=""><i class="fab fa-telegram"></i></a>
+                </li>
+                <li class="social">
+                    <a class="social__media" href=""><i class="fab fa-vk"></i></a>
+                </li>
             </ul>
         </div>
-        
+
         <div class="footer__content">
             <form class="form" action="">
-                <input type="text" placeholder="Введите запрос">
+                <input class="form__text" type="text" placeholder="Введите запрос">
                 <button class="form__button" type="submit">Поиск</button>
             </form>
         </div>
@@ -93,5 +103,10 @@
     <div class="bottom-bar">
         <p>&copy; 2025</p>
     </div>
-    </footer>
+</footer>
+</div>
+
+<script src="./scripts/script.js"></script>
+</body>
+
 </html>
