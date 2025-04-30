@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -64,11 +65,9 @@
 
         <div class="news">
             <h3 class="news__title">Новости </h3>
-            <div class="news__wrap">
-                <button class="news__left">
-                    <img src="images/left1.png" alt="Влево" class="news__left-swiper" width="60">
-                </button>
-
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <div class="news__card">
                     <img class="news__image" src="images/minnie1.jpg" alt="Фото" width="200">
                     <p class="news__subtitle">Новость 1</p>
@@ -76,6 +75,8 @@
                         одноимённым мини-альбомом.</p>
                     <button class="news__link" data-id="1"> Читать дальше</button>
                 </div>
+              </div>
+              <div class="swiper-slide">
                 <div class="news__card">
                     <img class="news__image" src="images/jisoo1.jpg" alt="Фото" width="200">
                     <p class="news__subtitle">Новость 2</p>
@@ -83,6 +84,8 @@
                         вместе с музыкальным видео на заглавную песню «Earthquake».</p>
                     <button class="news__link"  data-id="2"> Читать дальше</button>
                 </div>
+              </div>
+              <div class="swiper-slide">
                 <div class="news__card">
                     <img class="news__image" src="images/felix1.jpg" alt="Фото" width="200">
                     <p class="news__subtitle">Новость 3</p>
@@ -90,6 +93,8 @@
                         аварии, о которой сообщил его лейбл JYP Entertainment</p>
                     <button class="news__link" data-id="3">Читать дальше</button>
                 </div>
+              </div>
+              <div class="swiper-slide">
                 <div class="news__card">
                     <img class="news__image" src="images/Cosmosy" alt="Фото" width="200">
                     <p class="news__subtitle">Новость 4</p>
@@ -97,6 +102,8 @@
                         вместе с музыкальным видео на заглавную песню «Earthquake».</p>
                     <button class="news__link" data-id="4"> Читать дальше</button>
                 </div>
+              </div>
+              <div class="swiper-slide">
                 <div class="news__card">
                     <img class="news__image" src="images/echo.png" alt="Фото" width="200">
                     <p class="news__subtitle">Новость 5</p>
@@ -104,6 +111,8 @@
                         вместе с музыкальным видео на заглавную песню «Earthquake».</p>
                     <button class="news__link" data-id="5"> Читать дальше</button>
                 </div>
+              </div>
+              <div class="swiper-slide">
                 <div class="news__card">
                     <img class="news__image" src="images/jennie.png" alt="Фото" width="200">
                     <p class="news__subtitle">Новость 6</p>
@@ -111,6 +120,8 @@
                         одноимённым мини-альбомом.</p>
                     <button class="news__link" data-id="6"> Читать дальше</button>
                 </div>
+              </div>
+              <div class="swiper-slide">
                 <div class="news__card">
                     <img class="news__image" src="images/jin.png" alt="Фото" width="200">
                     <p class="news__subtitle">Новость 7</p>
@@ -118,12 +129,15 @@
                         одноимённым мини-альбомом.</p>
                     <button class="news__link" data-id="7"> Читать дальше</button>
                 </div>
-            </div> 
-
-            <button class="news__right">
-            <img src="images/right1.png" alt="Вправо" class="news__right-swiper" width="60">
-        </button>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
+
+
+
     </main>
 
     <div class="applications" hidden data-id="1">
@@ -218,6 +232,7 @@
 </div>
 
     <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
 
 </body>
