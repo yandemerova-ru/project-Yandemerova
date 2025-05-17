@@ -276,16 +276,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Удаляем элемент из DOM
             preloader.remove();
-        }, 500); // Задержка 3 секунды
+        }, 1000); // Задержка 1 секунда
     }
 
 
     // объявляем переменную sliders,куда помещаем элемент с классом swiper
-    const sliders = document.querySelector('.swiper');
+    const sliders = document.querySelector('.mySwiper');
     //проверяем существует ли элемент
     if (sliders) {
-        const swiper1 = new Swiper(sliders, {
-            slidesPerView: 4,
+        const swiper = new Swiper(sliders, {
+            slidesPerView: "auto",
             spaceBetween: 10,
             // Пагинация
             pagination: {
@@ -300,6 +300,118 @@ document.addEventListener("DOMContentLoaded", () => {
             },
         });
     }
+
+
+// Слайдер. Биография.
+    var swiper = new Swiper(".mySwiperr", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-paginationn",
+        },
+      });
+
+
+// Функция открытия модального окна
+function openModal(groupName, groupImgSrc, description) {
+    const modal = document.getElementById('modalWindow');
+    const title = document.getElementById('modalTitle');
+    const image = document.getElementById('modalImage');
+    const desc = document.getElementById('modalDescription');
+    
+    // Заполняем данные
+    title.textContent = groupName;
+    image.src = groupImgSrc;
+    desc.textContent = description || 'Описание отсутствует';
+    
+    // Показываем модальное окно
+    modal.style.display = 'block';
+}
+
+// Закрытие модального окна
+function closeModal() {
+    const modal = document.getElementById('modalWindow');
+    modal.style.display = 'none';
+}
+
+// Обработчик закрытия окна при клике на элемент ".close-button"
+document.querySelector('.close-button').addEventListener('click', function(event){
+    event.preventDefault();
+    closeModal();
+});
+
+// Открываем модалку при клике на каждую группу
+const groups = document.querySelectorAll('.group');
+groups.forEach((group) => {
+    group.addEventListener('click', () => {
+        const name = group.querySelector('.group__name').textContent.trim();  
+        const imgSrc = group.querySelector('.group__img').src;
+        
+        // Простое описание по названию группы
+        let description = '';
+        switch(name.toLowerCase()) {
+            case 'bts':
+                description = 'Корейская группа BTS — одна из самых популярных K-pop-групп в мире.';
+                break;
+            case 'txt':
+                description = 'TXT — молодой корейский бойз-бэнд от агентства Big Hit Entertainment.';
+                break;
+            case 'seventeen':
+                description = 'Seventeen — многонациональная южнокорейская группа с уникальным стилем музыки.';
+                break;
+            case 'ateez':
+                description = 'ATEEZ — музыкальная группа с мощным вокалом и энергичными выступлениями.';
+                break;
+            case 'stray kids':
+                description = 'Stray Kids — коллектив из Южной Кореи, известный своими хип-хоп треками и уникальными визуальными эффектами.';
+                break;
+            case 'enhypen':
+                description = 'ENHYPEN — молодая K-pop группа, ставшая популярной благодаря участию в шоу I-LAND.';
+                break;
+        }
+        
+        openModal(name, imgSrc, description);
+    });
+});
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 });
